@@ -1,0 +1,154 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif; /* Serious, formal serif font */
+  font-size: 14px; /* Increased font size */
+  line-height: 1.8; /* Slightly more spacing for readability */
+  letter-spacing: 0.6px; /* Subtle spacing */
+  word-spacing: 1.2px;
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  background-color: #fff;
+}
+
+/* Layout */
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* Header and Footer */
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif; /* Bold serif for a formal look */
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Text Indentation */
+section p:first-of-type {
+  text-indent: 1.25rem;
+}
+
+/* Links */
+a {
+  text-decoration: underline; /* Default underline */
+  color: #a66; /* Matches the horizontal bars */
+}
+
+a:hover, a:focus {
+  text-decoration: none; /* Remove underline on hover */
+  color: #d44;
+}
+
+a:active {
+  font-weight: bold;
+  color: #800;
+}
+
+a:visited {
+  color:#5A6772;
+}
+
+/* External Link Icon */
+a[href^="https://"]:after {
+  content: "";
+  display: inline-block;
+  background: url('external-link-52.png') no-repeat center;
+  background-size: contain;
+  width: 8px;
+  height: 8px;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+
+/* Lists */
+ul, ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: square; /* Custom bullet */
+}
+
+/* Navigation Menu */
+nav {
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px;
+}
+
+nav a {
+  display: block;
+  padding: 20px 10px;  /* Increased vertical padding = taller button */
+  font-size: 1.5rem;  /* Slightly larger text */
+  background: white;
+  color: #a66;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #a66;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-bottom: 12px; /* More spacing between buttons */
+}
+
+nav a:hover {
+  background: #a66;
+  color: white;
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+  font-size: 1.2rem;
+}
